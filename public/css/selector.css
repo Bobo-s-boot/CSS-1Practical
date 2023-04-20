@@ -1,0 +1,186 @@
+html {
+  max-width: 720px;
+}
+
+body {
+  background: #fff;
+}
+
+/* .input-dark{
+  background: #585858;
+}
+
+.input-dark[required] {
+  background: rgb(222, 24, 24);
+}
+
+.input-dark[type='number'] {
+  background: rgb(55, 255, 0);
+}
+
+.small-img[alt~="small"] {
+  height: 500px;
+}
+
+a[rel~="external"] {
+ color: greenyellow;
+}
+
+button[class|="btn"] {
+  background: blue;
+}
+
+a[class*="btn"] {
+ background: fuchsia;
+}
+
+.btn::first-letter {
+ color: pink;
+}
+
+.big-text::first-line {
+ color: aqua;
+}
+
+.input-whith::placeholder {
+  color: blueviolet;
+  background: olive;
+}
+
+.big-text::before {
+  content:"@@@";
+  color: royalblue;
+}
+
+.big-text::after {
+  content:"???";
+  color: rgb(28, 30, 34);
+}
+
+.before-after::before,
+.before-after::after {
+  content:"+++";
+  color: lightblue;
+  background: fuchsia;
+}
+
+:any-link{
+  color: black;
+  background: violet;
+}
+
+:dir(ltr) {
+  font-family:Arial,sans-serif;
+}
+
+.element:fullscreen {
+  background-color: #585858;
+  color: yellow;
+}
+
+:currentn(p,li,dt,dd) {
+  background: forestgreen;
+}
+
+:future(p,span) {
+  display: none;
+} */
+
+#test:target {
+  color: blue;
+}
+.link:link {
+  color: red;
+}
+
+.link:hover {
+  color: gold;
+}
+
+/* .card:hover {
+  background: green;
+} */
+
+.link2:active {
+  color: purple;
+}
+
+/* .card:active {
+  background: firebrick;
+} */
+
+input {
+  background-color: gray;
+}
+
+input:focus {
+  background-color: rebeccapurple;
+}
+
+.card:focus-within {
+  background: yellow;
+}
+
+.card:lang(en) {
+  background: pink;
+}
+
+.card:lang(en) > span::after {
+  content: "(en)";
+}
+
+button {
+  background-color: aquamarine;
+}
+
+button:enabled {
+  background-color: rosybrown;
+}
+
+button:disabled {
+  background-color: violet;
+}
+
+.inp:read-write {
+  background-color: khaki;
+}
+
+.inp:read-only {
+  background-color: khaki;
+}
+
+input[type="checkbox"]:checked ~ span {
+  background: orange;
+}
+
+.valid:valid {
+background: mediumpurple;
+}
+
+.valid:invalid {
+  background: honeydew;
+  }
+
+  .valid:optional {
+    background: rgb(106, 154, 168);
+    }
+
+.number:focus {
+  background: gray;
+}
+
+.number:out-of-range {
+  background: red;
+}
+
+.number:in-range {
+  background: lawngreen;
+}
+
+.number:invalid {
+  background: rgb(237, 17, 17);
+}
+
+input:placeholder-shown ~ span {
+  background: maroon;
+}

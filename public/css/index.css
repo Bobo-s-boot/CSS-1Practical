@@ -1,7 +1,98 @@
-html {
-  max-width: 720px;
+.card {
+   color: red;
 }
 
-body {
-  background: #fff;
+.card > p 
+{
+ color:green;
+  -webkit-text-fill-color: aqua;
+  -webkit-text-stroke: 1px yellow;
 }
+
+p:focus,
+p:active,
+p:hover {
+    -webkit-text-fill-color: rgb(126, 246, 8);
+    -webkit-text-stroke: 1px rgb(255, 0, 166);
+}
+
+h1 {
+    direction: rtl;
+    text-decoration: underline dotted rgb(0, 30, 255);
+                     /* overline
+                     line-through */
+}
+
+#test {
+ color: initial;
+ -webkit-text-fill-color: initial;
+  -webkit-text-stroke:initial;
+  text-align: justify;
+  letter-spacing: 1em;
+
+} 
+
+#test {
+    color: inherit;
+    -webkit-text-fill-color: inherit;
+     -webkit-text-stroke:inherit;
+
+     /* writing-mode: vertical-lr; */
+     text-align: left;
+     tab-size: 10px;
+   } 
+   
+   span {
+    text-align: center;
+    text-transform: lowercase;
+   }
+
+   span[class=ss] {
+    text-transform: uppercase;
+   }
+
+   pre {
+    tab-size: 1;
+   }
+
+h2:hover {
+    text-decoration-line: line-through;
+    text-decoration-style: double;
+    /* dotted,dashed,wavy  */
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+span {
+   font-size: larger;
+}
+
+pre {
+  font-weight: lighter;
+
+  font-style: oblique;
+}
+
+pre {
+  display: none;
+}
+
+.blox {
+  display:block;
+  background: rgb(60, 139, 0);
+  margin: auto;
+
+  margin: auto ;
+  width: 100px;
+  height:min-content ;
+  min-height: max-content;
+  max-height: 200px;
+  
+}
+

@@ -1,3 +1,7 @@
+ :root {
+  --text-color:#212529;
+ }
+ 
 .page {
   background: #FFFFFF;
   padding:  0 15px;
@@ -35,7 +39,8 @@
 
 .nav_link:hover {
  text-decoration: underline;
- color: blue;
+ /* color: blue; */
+ opacity:50%;
 }
 
 .nav_vertical > .nav_link {
@@ -159,6 +164,7 @@
   outline: 2px solid violet;
   outline-offset: 5px;
   cursor: pointer;
+  opacity: 0.5;
 }
 
 .btn {
@@ -204,4 +210,71 @@ h1 {
 
 .overflow {
   overflow-wrap: anywhere;
+}
+
+body {
+  /* background: red; */
+}
+
+.page {
+  background-color: transparent;
+}
+
+.hero_text {
+ background-image : url("/img/test.png");
+}
+
+.card_block {
+  /* list-style-type: upper-alpha; */
+  list-style-position: inside;
+  list-style-image: linear-gradient( to bottom right, blue, red); 
+  padding: 0;
+}
+
+.card_description_item {
+  display: list-item;
+} 
+
+.table tr {
+  border: 1px solid #343a40;
+}
+
+.table tr td {
+  border: 1px solid #4f6983;
+  border-bottom: 1px solid red; 
+  /* (border-bottom-color: red;) */
+  border-right-color: violet;
+
+}
+
+.table{
+  table-layout:fixed;
+  width: 600px;
+  border-collapse: unset;
+  border-spacing: 20px 10px;
+  caption-side: top;
+  empty-cells: hide;
+}
+
+.nav_link::before, .nav_link::after {
+  /* content:url("/img/test.png"); */
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-image: url("/img/test.png") 
+}
+
+.nav_link::before {
+  margin-right: 15px;
+}
+
+.nav_link::after {
+  margin-left:15px ;
+}
+
+.calc {
+ width: 600px;
+ margin: 0;
+ margin-left:calc(50% - (600px / 2));
 }

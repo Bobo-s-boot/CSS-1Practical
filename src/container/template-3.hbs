@@ -1,7 +1,7 @@
          <header class="header row g-0">
-          <div class="col-3">
+          <a href="#test">
             {{> logo}}
-          </div>
+          </a>
 
           <nav class="header-nav col-9">
               <div class="header_nav_right">
@@ -9,16 +9,28 @@
               </div>
           </nav>
        </header>
-     
+      
+
 {{#with hero}}
       <div class="hero">
         <div class="hero-content">
           <h1 class="hero-title">{{title}}</h1>
           <p class="hero-text">{{text}}</p>
         </div>
-        <img src="{{photo}}" alt="Hero image" class="hero-img">
+        <div class="hero-slider">
+          <div class="hero-slider-icon hero-slider-left">-</div>
+          <img src="{{photo}}" alt="Hero image" class="hero-img">
+          <div class="hero-slider-icon hero-slider-right">+</div>
+        </div>
       </div>
 {{/with}}
+
+ <input type="text" class="input">
+
+<div class="modal">
+  {{!-- <img src="{{hero.photo}}" alt="Hro image" class="modal-image"> --}}
+  <div class="modal-text">{{hero.text}}</div>
+</div>
 
       <main class="block">
       {{#each blog}}
@@ -38,7 +50,7 @@
       </div>
     {{/with}}
 
-        <footer class="row g-0 footer">
+        <footer class=" footer" id="test">
          <div class="col-3">
             {{> logo}}
             <span class="footer_copyright">Copyright 2023-2024</span>

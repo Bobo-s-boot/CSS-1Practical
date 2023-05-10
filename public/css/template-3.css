@@ -1,4 +1,28 @@
- :root {
+@keyframes fly {
+  from {
+    top:0;
+    left: 0;
+    background: violet;
+  }
+
+  25% {
+    bottom: 500px;
+    left: 500px;
+    background: red;
+  }
+
+  50% {
+    left: 0;
+    background: black;
+  }
+
+  to {
+    top: 0;
+    left: 0;
+    background: green;
+  }
+}
+:root {
   /* --space-1:4px; */
   --space-m:12px;
   --space-xm:16px;
@@ -17,6 +41,7 @@
   --color-text:#343a40;
   --border-radius:12px;
   --weight-title: 500;
+  --page-width: 960px;
  }
  
  /* ________________ */
@@ -43,6 +68,13 @@
  border-bottom: 1px solid var(--colar-border);
  display: flex;
  justify-content: space-between;
+ position: fixed;
+ width: 960px;
+ top: 0;
+ /* left: calc(50% - var(--page-width) / 2); */
+ background: white;
+ z-index: 1;
+ position: sticky;
 }
 
 .logo {
@@ -75,6 +107,8 @@
  font-size: var(--size-d);
  text-decoration: none;
  line-height: 100%;
+ transition-property: colar;
+ transition-duration: 1s;
 }
 
 .nav_link:hover {
@@ -173,12 +207,17 @@
   font-size: (--size-d);
   color: var(--color-white);
   text-decoration: none;
+  text-align: center;
   background-color: var(--color-primary);
   border-radius: var(--border-radius);
+  transition-property: opacity,background-color,colar;
+  transition-duration: 1s;
 }
 
 .card-button:hover {
   opacity: 0,7;
+ background: yellow;
+ color: red;
 }
 
 .form-title {
@@ -186,3 +225,76 @@
   font-weight: var(--weight-title);
   color: var(--color-white);
 }
+
+.hero-slider-icon {
+  background: violet;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  color: bisque;
+  position: absolute;
+  top:calc(50% - 15px)
+}
+
+.hero-slider-icon:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.hero-slider {
+  position: relative;
+}
+
+.hero-slider-right {
+  left: 470px;
+}
+
+.herp-slider-left {
+  right: 470px;
+}
+
+.modal {
+  position: fixed;
+  top: 200px;
+  left: 200px;
+  /* height: 100px; */
+  width:  600px;
+  background:black;
+  color: #fff;
+  padding: 24px;
+  border-radius: 24px;
+  line-height: 150%;
+  z-index: 2;
+  /* transition-property:top ;
+  transition-duration: 3s; 
+  transition-timing-function:ease-in-out ;
+  transition-delay: 3s; */
+}
+
+.body:hover.modal {
+  animation-name: fly ;
+  animation-duration: 2s;
+  animation-delay:1s ;
+}
+
+.modal-image {
+  height: 50px;
+  width: 300px;
+  float: left;
+  margin-right: 24px;
+  margin-top: 12px;
+  object-fit: contain;
+}
+
+.input {
+  caret-color: aquamarine;
+  border: 1px solid black;
+}
+
+:root {
+  scroll-behavior: smooth;
+}
+

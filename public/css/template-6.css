@@ -163,7 +163,7 @@
 }
 
 .form{
-  background-color: #FFFFFF;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
   display: flex;
   align-items: start;
   flex-direction: column;
@@ -193,6 +193,7 @@
   height: 42px;
   margin-top: 6px;
   margin-bottom: 6px;
+  margin-left: 4px;
 }
 
 .form-hr {

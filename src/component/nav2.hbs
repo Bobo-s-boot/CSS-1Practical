@@ -1,0 +1,9 @@
+<nav class='header-nav'>
+    <div class='header-nav-right'>
+      <div class="nav {{#if isVertical}}nav_vertical{{else}}nav_inline{{/if}}">
+       {{#each links}}
+          <a href="{{url}}">{{text}}</a>
+       {{/each}}
+      </div>
+    </div>
+  </nav>

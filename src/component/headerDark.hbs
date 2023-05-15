@@ -1,0 +1,22 @@
+<header class='header-logo'>
+  <div class='header-log'>
+    <span class='lf'>Logo</span>
+  </div>
+
+  {{#with header}}
+    <nav class='header-nav'>
+      <div class='nav'>
+        {{#each links}}
+          <a class='nav-text' href='{{url}}'>{{text}}</a>
+        {{/each}}
+      </div>
+    </nav>
+  {{/with}}
+</header>
+
+<div class='header-logo-2'>
+  <a href='www.example.com' class='ff'>Ad
+    <p class='header-logo-text'>{{header.ad.text}}
+    </p></a>
+  <p class='users'>{{header.userOnline}}</p>
+</div>

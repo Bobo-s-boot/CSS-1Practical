@@ -10,6 +10,9 @@
       {{page.title}}
     </title>
     <meta charset='utf-8' />
+
+     {{> headerDark}}
+
     <link
       rel='apple-touch-icon'
       sizes='180x180'
@@ -82,11 +85,21 @@
   </head>
 
   <body>
-
+     
     {{!  ↓  ця кострукція показує куди шаблонізатору треба вставляти код з container файлу   }}
     <div class='page'>
       <div class='page_content'>{{{body}}}</div>
     </div>
+
+    {{> articleCardDark}}
+
+    {{> footerDark}}
+
+
+
+
   </body>
+
+    
 
 </html>

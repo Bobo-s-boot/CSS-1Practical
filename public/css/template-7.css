@@ -69,7 +69,8 @@ html {
     font-size: 14px;
     line-height: 100%;
     display: flex;
-    align-items: center;
+    align-items: center; 
+    white-space: nowrap;
    }
  
    .header-nav{
@@ -127,14 +128,17 @@ html {
     justify-content: flex-end;
     max-width: 1150px;
     margin: 0 auto;
+
    }
    
    .header-logo-2 {
     max-width: 1150px;
+    align-items: center;
     margin: 12 auto;
     display: flex;
     flex-direction: row;
     gap: 8px;
+    justify-content: space-between;
   }
 
   footer {
@@ -404,3 +408,4 @@ html {
  right: 40%;
  top: 44%;
 }
+

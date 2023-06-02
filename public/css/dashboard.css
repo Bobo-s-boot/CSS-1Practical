@@ -515,6 +515,13 @@ body {
 
 @layer adaptive {
   @media all and (width <= 1000px) {
+
+    html {
+      width: 100%;
+      height: 100%;
+      background: #efeff4;
+    } 
+
     .page--dashboard {
       grid-template-columns: 1fr;
     }
@@ -524,6 +531,22 @@ body {
 
     .header {
       display: none;
+    }
+
+    .payment {
+     position: absolute;
+     left: 12px;
+     top: 650px;
+    }
+
+    .analytic--blue {
+      position: absolute;
+      width: 19%;
+      left:4em;
+    }
+
+    .analytic__arrow {
+     left: calc(22% + 50px);
     }
   }
 }
